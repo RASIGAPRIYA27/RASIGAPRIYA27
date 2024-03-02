@@ -1,0 +1,254 @@
+
+
+
+.backg{
+    background-color:  ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title{
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+.profiletxt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225,225,0.2);
+}
+.profiletxt .imga{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletxt .imga img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.profiletxt h2{
+    color: ghostwhite;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletxt h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+.info{
+    padding-top: 40px;
+    color:  ghostwhite
+}
+.info ul{
+    position: relative;
+}
+.info ul li{
+    position: relative;
+    list-style:  none;
+    margin:10px 0 ;
+    cursor: pointer ;
+}
+.info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:ghostwhite ;
+}
+.info ul li .span{
+    color: azure;
+    font-weight: 300;
+
+
+}
+.info.edu li{
+    margin-bottom: 25px;
+    font-size: 20px;
+
+
+}
+.info.edu h5{
+    color: lavenderblush;
+    font-weight: 500;
+}
+.info.edu h4:nth-child(2){
+    color: azure;
+    font-weight: 600;
+    
+}
+.info.edu h4{
+    color: aliceblue;
+    font-weight: 300;
+
+}
+.percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#4f4b92a1 ;
+    display: block;
+    margin-top: 5px;
+
+}
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+   
+    background:#EFD9F7;
+
+}
+.txt{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height:1000px;
+    background:#EFD9F7;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+}
+.container .left-side{
+    position: relative;
+    background: #272462 ;
+    padding: 40px;
+
+
+}
+.container .right-side{
+    position: relative;
+    background:#EFD9F7;  
+    padding: 40px;
+
+
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.tit{
+    color: #272462;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+    margin-bottom:10px ;
+}
+p{
+    color: #272462;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+.yr{
+    min-width: 150px;
+}
+.yr h4{
+    text-transform: uppercase;
+    color:  #272462af;
+    font: weight 600px; ;
+}
+.txt h3{
+    text-transform: uppercase;
+    color: #272462;
+    font-size: 20px;
+     
+}
+.boxy{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.boxy h4{
+    text-transform: uppercase;
+    color:  #272462af ;
+    font-weight: 500;
+
+}
+.percenty{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: lavenderblush;
+}
+.percenty div{
+    position: absolute;
+    top: 0;
+    left:  0;
+    height: 100%;
+    background: #272462;
+
+}
+.int ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.int ul li{
+    list-style: none;
+    color: #272462;
+    font-weight: 500;
+    margin:10px 0 ;
+}
+.int ul li .fa{
+    color: #701e8e;
+    font-size: 18px;
+    width: 20px;
+
+}
+@media(max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .int ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .about.box{
+        flex-direction:  column;
+    }
+    .about.box.yr{
+        margin-bottom: 5px; 
+    }
+    .int  ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills.box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
