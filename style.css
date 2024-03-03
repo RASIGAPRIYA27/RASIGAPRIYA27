@@ -171,6 +171,7 @@ p{
 }
 .yr{
     min-width: 150px;
+    flex-direction: row;
 }
 .yr h4{
     text-transform: uppercase;
